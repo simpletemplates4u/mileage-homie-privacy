@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Connecting to Mileage Homie…</title></head>
+<body style="font-family: -apple-system, sans-serif; text-align: center; padding-top: 4em;">
+  <p>Returning to Mileage Homie…</p>
+  <p><a id="link" href="#">Tap here if nothing happens.</a></p>
+  <script>
+    var target = "mileagehomie://oauth" + window.location.search;
+    document.getElementById("link").href = target;
+    window.location.replace(target);
+  </script>
+</body>
+</html>
